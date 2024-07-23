@@ -1,0 +1,9 @@
+.png-form {
+  .png-form-heading {
+    @apply text-xl not-italic font-normal leading-[150%] tracking-[-0.2px];
+  }
+
+  .png-form-row {
+    @apply flex flex-row gap-[50px] flex-wrap;
+  }
+}

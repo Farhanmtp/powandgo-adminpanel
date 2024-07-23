@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: theme('colors.primary') !important;
+  font-family: 'Apercu Pro', sans-serif;
+  max-height: none;
+  top: 0 !important;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.primaryBtn {
+  background: radial-gradient(
+      99.02% 165.68% at 108.93% 26.08%,
+      rgba(173, 255, 0, 0.6) 0%,
+      rgba(243, 243, 243, 0) 100%
+    ),
+    radial-gradient(
+      104.36% 113.36% at -0.44% 3.95%,
+      rgba(244, 255, 175, 0.9) 0%,
+      rgba(219, 255, 0, 0.9) 40.1%,
+      rgba(166, 193, 0, 0) 100%
+    ),
+    #9ce500;
+  background-blend-mode: lighten, normal, normal;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+th,
+td {
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  padding: 20px;
+}
+
+td {
+  padding: 10px 20px;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+input[type='password'] {
+  -webkit-text-security: square;
+}
+
+table th:first-child {
+  border-radius: 16px 0 0 16px;
+}
+
+table th:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.cell-container {
+  padding: 10px 0px;
+  border-bottom: 1px solid white;
+  min-height: 45px;
+  font-size: 14px;
+}
+
+.form-label {
+  color: theme('colors.secondary');
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: theme('colors.secondary');
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.secondary');
+}
+
+input[type='file']::file-selector-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  background-color: theme('colors.secondary');
+  transition: 1s;
+  border: 0px;
+  cursor: pointer;
+}
+
+.rdrDateDisplayWrapper {
+  border-radius: 20px;
+}
+
+.rdrDayNumber span {
+  color: #1d2429 !important;
+}
+
+input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  caret-color: #fff;
+}
+
+iframe.skiptranslate {
+  display: none !important;
+}
+
+.paymentMethod {
+  .ElementsApp .Icon-fill {
+    fill: white !important;
+  }
+}
